@@ -81,7 +81,7 @@ data-n55-sodapop-size="small" data-n55-sodapop-fullscreen="false">
 
                 <section data-n55-carousel-page-name="domain">
                     <aside class="h-center"><p class="readampm__caption">Add Widget to Your Website</p></aside>
-                    <p class="h-center readampm">Enter your website to continue. On which website would you like to display this widget? We use this information to customize your experience.</p>
+                    <p class="h-center readampm">Enter your website to continue.&ensp; On which website would you like to display this widget?&ensp; We use this information to customize your experience.</p>
 
                     <br class="h-br-half">
                     <input id="js-wtt-a2yw-inp__domain--id" name="domain" class="a2yw-n55__inp n55-lc__input" type="text" placeholder="https://www.YourWebsite.com">
@@ -143,7 +143,7 @@ data-n55-sodapop-size="small" data-n55-sodapop-fullscreen="false">
                     <br class="h-br-half">
 
 <textarea id="js-a2yw-txt-area__copy--id"
-onClick="neodigmUtils.shake( document.getElementById('js-cta-a2yw__copy--id') )">&lt;!-- Paste in Document Head -->
+onClick="neodigmUtils.shake( '#js-cta-a2yw__copy--id' )">&lt;!-- Paste in Document Head -->
 &lt;script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -253,7 +253,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <script>
-let oWTTCompStore = {"token": "compress_json_wdg","theme": "brand", "ampm": "light", "optin": true, "copied": false, "protomolecule":neodigmWidget.getCronSync()}
+let oWTTCompStore = {"token": "compress_json_wdg","terms": false, "theme": "brand", "ampm": "light", "optin": true, "copied": false, "protomolecule":neodigmWidget.getCronSync()}
 
 function doWTTCompStore( sAtr, sVal ){
     if( sAtr == "optin" ) sVal = !oWTTCompStore.optin
@@ -318,7 +318,7 @@ function navA2YW(){
         case 4:  
             fetch( "https://a55-wtt-api-v1.onrender.com/app/list" ).then( result => result.json() ).then(( res ) => {
                 setTimeout( ()=>{
-                    neodigmWired4Sound.sound( 22 )
+                    neodigmWired4Sound.sound( 22, "QUITE" )
                     document.getElementById("js-cta-a2yw__copy--id").classList.remove("h-ds__none")
                     document.getElementById("js-cta-a2yw__copy--id").classList.add("h-ds__inlineblock")
                     neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"snippet"})
@@ -404,7 +404,7 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                         }
                     });
                 })
-                neodigmUtils.typeOn({"q1st":"#txt-facet1", "msg":"Attract Visitors | Forever Free and Easy! | Drive Web Traffic 🍰 ","uniqueDelay": 84})
+                neodigmUtils.typeOn({"q1st":"#txt-facet1", "msg":"Attract Visitors|Far More Effective Than SEO Alone|Drive Web Traffic 🍰 ","uniqueDelay": 64})
                 setTimeout( ()=>{
                     if( neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"getName"}) == "intro_caro" ){
                         neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"email"})
@@ -420,7 +420,6 @@ window.addEventListener('DOMContentLoaded', (ev) => {
                 let bHideJuicebar = true
                 switch( nPg ){
                     case 1:  
-                       
                     break;
                     case 2:  
                         setTimeout( ()=>{
