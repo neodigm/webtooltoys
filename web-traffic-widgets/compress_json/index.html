@@ -1,0 +1,114 @@
+<body data-n55-ampm-theme="" data-n55-ampm-orig="" >
+    <section class="pfmf-grid pfmf-grid__100 readable__doc">
+    <div>
+        <article style="padding: 12px 12px; background-image: linear-gradient(#000, #444, #000);">
+<neodigm-marquee data-n55-marquee-text=" This online tool will automatically change text case and correct title capitalization errors. "
+data-n55-marquee-size="medium">
+<pre data-n55-theme=""></pre>
+</neodigm-marquee>
+        </article>        
+    </div>
+</section>
+            
+  
+            <neodigm-widget data-n55-widget-config="{conf:'', ampm:'',mobile:''}" data-n55-widget-id="compress_json"></neodigm-widget>
+
+
+<link rel="stylesheet" href="/css/flickity.min.css">
+<script src="/js/flickity.pkgd.min.js"></script>
+
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55__v3_1.css"></link>
+<script src="https://arcanus55.github.io/neodigm55/dist/neodigm55__v3_1.js"></script>
+
+<link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"></link>
+<template src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"
+note="This agent is retired"></template>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+<script> window.addEventListener('load', () => { quicklink.listen(); }); </script>
+
+<script>
+    var _d = document;
+    _d.addEventListener( "contextmenu", function(e) {  
+        if( neodigmUtils ) neodigmUtils.robinTheme("warning");
+        if( neodigmWired4Sound ) neodigmWired4Sound.sound( 7 )
+    });
+    console.log("%c Scott C. Krause ⚡ Problem Solver and Visual Storyteller", "background: #000; color: #f4dc5e; font-size: 28px");
+
+    
+    let doZm = (( _d=document, qry=[".l-HeroZoom", ".js-img_HeroZoom", ".js-img_HeroZoom_bg"]) => {
+        let oHro = {"isInit": false, "x": 0, "y": 0, "w": 0, "h": 0, "zMult": 2, "zRatio": 2,"setMtrx": [1.38, 3.2, 1.38, 3.2]};
+        let eEv = _d.querySelector( qry[0] );
+        oHro.e = _d.querySelector( qry[1] ); oHro.eBg = _d.querySelector( qry[2] );
+        return {
+            "init": ()=>{
+                if( eEv && !neodigmUtils.isMobile() ){
+                    eEv.addEventListener("mouseenter", doZm.doHeroMouseEnter);
+                    eEv.addEventListener("mousemove", doZm.doHeroMouseMove);
+                    eEv.addEventListener("mouseout", doZm.oHeroMouseOut);
+                }
+            },
+            "doHeroMouseEnter": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    if( !oHro.isInit ){ 
+                        oHro.h = oHro.e.offsetHeight * oHro.zMult;
+                        oHro.w = oHro.e.offsetWidth * oHro.zMult;
+                        oHro.e.alt = "Magnifying";
+                        oHro.isInit = true;
+                    }
+                    oHro.eBg.style.opacity = "0";
+                    oHro.e.style.display = "block";
+                }
+
+            },
+            "doHeroMouseMove": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    oHro.x = (oHro.w - (oHro.e.offsetHeight * oHro.setMtrx[0] ))  -  (ev.offsetX * (oHro.zMult * (oHro.zMult/oHro.setMtrx[1])));
+                    oHro.y = (oHro.h - (oHro.e.offsetWidth  * oHro.setMtrx[2] ))  -  (ev.offsetY * (oHro.zMult * (oHro.zMult/oHro.setMtrx[3])));
+                    oHro.e.style.transform = "translate(" + oHro.x + "px, " + oHro.y + "px) scale("+oHro.zRatio+")";
+                }
+            },
+            "oHeroMouseOut": ( ev )=>{
+                if( oHro.e && oHro.eBg && oHro.eBg.dataset.zoom != "false" ){
+                    oHro.eBg.style.opacity = "1";
+                    oHro.e.style.display = "none";
+                }
+            }
+        };
+    })();
+    doZm.init();
+</script>
+
+<script>
+;(function(o,l,a,r,k,y){if(o.olark)return; r="script";y=l.createElement(r);r=l.getElementsByTagName(r)[0]; y.async=1;y.src="//"+a;r.parentNode.insertBefore(y,r); y=o.olark=function(){k.s.push(arguments);k.t.push(+new Date)}; y.extend=function(i,j){y("extend",i,j)}; y.identify=function(i){y("identify",k.i=i)}; y.configure=function(i,j){y("configure",i,j);k.c[i]=j}; k=y._={s:[],t:[+new Date],c:{},l:a}; })(window,document,"static.olark.com/jsclient/loader.js");
+olark.identify('7233-815-10-7742');
+</script>
+
+<script type="application/ld+json">
+    { "@context": "https://schema.org", 
+     "@type": "BlogPosting",
+     "headline": "compress_json",
+     "alternativeHeadline": "",
+     "image": "../_tn.webp",
+     "award": "Best of the Independent Web",
+     "editor": "Scott C. Krause", 
+     "genre": "Emerging Tech", 
+     "keywords": "Data Visualization LWC PWA Three.js TypeScript WASM Vue.js UX Laravel", 
+     "wordcount": "1648",
+     "publisher": "Arcanus 55",
+     "url": "https:\/\/www.WebToolToys.com\/web-traffic-widgets\/compress_json\/",
+     "datePublished": "151515-07-15",
+     "dateCreated": "151515-07-15",
+     "dateModified": "151515-07-15",
+     "description": "compress_json",
+     "articleBody": " ",
+       "author": {
+        "@type": "Person",
+        "url": "https://www.theScottKrause.com/",
+        "name": "Scott C. Krause"
+      }
+     }
+    </script>
+
+    </body>
+</html>
