@@ -8,12 +8,21 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jul 2023 20:55:30 -0500</lastBuildDate><atom:link href="https://www.WebToolToys.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Compress_json</title>
+      <title>case_conversion</title>
+      <link>https://www.WebToolToys.com/web-traffic-widgets/case_conversion/</link>
+      <pubDate>Sat, 15 Jul 2023 20:55:30 -0500</pubDate>
+      
+      <guid>https://www.WebToolToys.com/web-traffic-widgets/case_conversion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>compress_json</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/compress_json/</link>
       <pubDate>Sat, 15 Jul 2023 20:55:30 -0500</pubDate>
       
       <guid>https://www.WebToolToys.com/web-traffic-widgets/compress_json/</guid>
-      <description>{{ partial &#34;marquee.html&#34; .}} </description>
+      <description></description>
     </item>
     
   </channel>
