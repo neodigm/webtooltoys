@@ -92,8 +92,6 @@ let neodigmOptCustom = { neodigmAgent:true }
 <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55__v3_1.js"></script>
 
 <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"></link>
-<template src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"
-note="This agent is retired"></template>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
 <script> window.addEventListener('load', () => { quicklink.listen(); }); </script>
@@ -148,6 +146,18 @@ note="This agent is retired"></template>
         };
     })();
     doZm.init();
+</script>
+
+<script>
+setTimeout(()=>{  
+    let autoOpenParm = new URLSearchParams( document.location.search )
+    autoOpenParm = autoOpenParm.get("autoOpen")
+    if( autoOpenParm && neodigmSodaPop ) {
+        neodigmSodaPop.autoOpen( autoOpenParm )
+        autoOpenParm = autoOpenParm + "_cb"  
+        if(typeof window[ autoOpenParm ] === "function") neodigmSodaPop.setOnAfterOpen( window[ autoOpenParm ] )
+    } 
+},876)
 </script>
 
 <script>
