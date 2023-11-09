@@ -6,7 +6,16 @@
     <description>Recent content on Amazing Tools for Your Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Nov 2023 15:49:27 +0000</lastBuildDate><atom:link href="https://www.WebToolToys.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Nov 2023 16:21:24 +0000</lastBuildDate><atom:link href="https://www.WebToolToys.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JSON and String Compress</title>
+      <link>https://www.WebToolToys.com/web-traffic-widgets/compress-json/</link>
+      <pubDate>Thu, 09 Nov 2023 16:21:24 +0000</pubDate>
+      
+      <guid>https://www.WebToolToys.com/web-traffic-widgets/compress-json/</guid>
+      <description>Compress JSON Strings with JavaScript</description>
+    </item>
+    
     <item>
       <title>Convert Title Case</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/case-conversion/</link>
@@ -14,15 +23,6 @@
       
       <guid>https://www.WebToolToys.com/web-traffic-widgets/case-conversion/</guid>
       <description>Online Capitalization Tool</description>
-    </item>
-    
-    <item>
-      <title>compress_json</title>
-      <link>https://www.WebToolToys.com/web-traffic-widgets/compress_json/</link>
-      <pubDate>Sat, 15 Jul 2023 20:55:30 -0500</pubDate>
-      
-      <guid>https://www.WebToolToys.com/web-traffic-widgets/compress_json/</guid>
-      <description></description>
     </item>
     
   </channel>
