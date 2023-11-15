@@ -41,9 +41,29 @@ data-n55-marquee-size="medium">
     </div>
 </section>
 <script>
-console.log( "duck ")
-    if( doPrefersColorScheme ) {doPrefersColorScheme( ("light" == "light") ? true : false ); }
+    let oWTTCompStore = {"token": "","terms": false, "theme": "brand", "ampm": "light", "optin": true, "copied": false, "protomolecule":neodigmAgent.genChronSync()}
+    oWTTCompStore.token = "compress_json"
+    
+
+    window.addEventListener('DOMContentLoaded', (ev) => {
+        setTimeout(function(){
+            if( neodigmSodaPop && neodigmMarquee && neodigmEnchantedCTA ){
+                if( neodigmSodaPop ){
+                    neodigmSodaPop.setOnAfterOpen( function(){
+                        neodigmToast.q("SHARE")
+                        neodigmAgent.sandboxShare( oWTTCompStore.token, {"all_input_data":""}, ( oTurnaround )=>{
+                            console.log(" ~~~ 3 | ", oTurnaround)
+                        } )  
+
+                    }, "js-wtt-sndbx-share-pup")
+                }
+            }
+        }, 2e3)
+    });
+    if( doPrefersColorScheme ) { doPrefersColorScheme( ("light" == "light") ? true : false ); }
 </script>
+
+
               
             <neodigm-widget data-n55-widget-config="{conf:'', ampm:'',mobile:''}" data-n55-widget-id="compress_json"></neodigm-widget>
 
@@ -369,7 +389,7 @@ j=d.createElement(s);j.async=true;j.src=
 
 
 <script>
-let oWTTCompStore = {"token": "compress_json_wdg","terms": false, "theme": "brand", "ampm": "light", "optin": true, "copied": false, "protomolecule":neodigmAgent.genChronSync()}
+
 
 function doWTTCompStore( sAtr, sVal ){
     if( sAtr == "optin" ) sVal = !oWTTCompStore.optin
@@ -395,7 +415,7 @@ function doWTTCompStore( sAtr, sVal ){
     }
     oWTTCompStore[ sAtr ] = sVal
 }
-function navA2YW(){
+async function navA2YW(){
     let nPg = neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"getPage"})
     let aElInp = [ ... document.querySelectorAll( ".a2yw-n55__inp" )]  
     let sMsg = ""
@@ -432,16 +452,15 @@ function navA2YW(){
             }
         break;
         case 4:  
-            let sProtoM = neodigmAgent.genChronSync()
-            fetch( "https://a55-wtt-api-v1.onrender.com/app/list", { headers: { "protomolecule": sProtoM } }  ).then( result => result.json() ).then(( res ) => {
-                setTimeout( ()=>{
-                    neodigmWired4Sound.sound( 22, "QUITE" )
-                    document.getElementById("js-cta-a2yw__copy--id").classList.remove("h-ds__none")
-                    document.getElementById("js-cta-a2yw__copy--id").classList.add("h-ds__inlineblock")
-                    neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"snippet"})
-                }, 3e3)
-            console.log( " ~~~ res | " , res )
-            } )
+    console.log( " ~~ pre sSnippet | roller " )
+            let sSnippet = await neodigmAgent.doA2YW( oWTTCompStore )
+    console.log( " ~~ sSnippet | " + sSnippet )
+            setTimeout( ()=>{
+                neodigmWired4Sound.sound( 22, "QUITE" )
+                document.getElementById("js-cta-a2yw__copy--id").classList.remove("h-ds__none")
+                document.getElementById("js-cta-a2yw__copy--id").classList.add("h-ds__inlineblock")
+                neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"snippet"})
+            }, 3e3)                
 
             neodigmCarousel.nav({"id":"js-wtt-a2yw-caro__id","nav":"anticipation"})
             neodigmWired4Sound.sound( 8, "QUITE" )
