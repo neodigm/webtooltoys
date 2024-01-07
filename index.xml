@@ -6,42 +6,35 @@
     <description>Recent content on Amazing Tools for Your Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Nov 2023 00:41:00 +0000</lastBuildDate><atom:link href="https://www.WebToolToys.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 26 Nov 2023 00:41:00 +0000</lastBuildDate>
+    <atom:link href="https://www.WebToolToys.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Cryptography Secure Message</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/web-cryptography-api/</link>
       <pubDate>Sun, 26 Nov 2023 00:41:00 +0000</pubDate>
-      
       <guid>https://www.WebToolToys.com/web-traffic-widgets/web-cryptography-api/</guid>
       <description>Securing JavaScript Web Apps with the Web Cryptography API</description>
     </item>
-    
     <item>
       <title>Horizontal Scroll</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/horizontal-scroll/</link>
       <pubDate>Wed, 15 Nov 2023 22:14:14 +0000</pubDate>
-      
       <guid>https://www.WebToolToys.com/web-traffic-widgets/horizontal-scroll/</guid>
       <description>Horizontal Scroll Animation</description>
     </item>
-    
     <item>
       <title>Convert Title Case</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/case-conversion/</link>
       <pubDate>Fri, 10 Nov 2023 02:20:23 +0000</pubDate>
-      
       <guid>https://www.WebToolToys.com/web-traffic-widgets/case-conversion/</guid>
       <description>Online Capitalization Tool</description>
     </item>
-    
     <item>
       <title>JSON and String Compress</title>
       <link>https://www.WebToolToys.com/web-traffic-widgets/compress-json/</link>
       <pubDate>Thu, 09 Nov 2023 16:21:24 +0000</pubDate>
-      
       <guid>https://www.WebToolToys.com/web-traffic-widgets/compress-json/</guid>
       <description>Compress JSON Strings with JavaScript</description>
     </item>
-    
   </channel>
 </rss>
