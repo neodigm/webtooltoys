@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
 </head>
 <body>
+<!-- Instance a wdgt given a token search param -->
+
 <template id="wttApp" data-n55-widget-config="{conf:'', ampm:'',mobile:''}" data-n55-widget-id="a55_bcg_word_skulduggery"></template>
 <script>
     let params = new URLSearchParams(document.location.search)
@@ -28,11 +30,10 @@
             if( elTmpl ){
                 elTmpl.dataset.n55WidgetId = SearchWdgtToken
                 elTmpl.outerHTML = elTmpl.outerHTML.replace("template", "neodigm-widget")
+                setTimeout(()=>{ neodigmAgent.init() }, 8)
             }
         }, 1e3)
     }
 </script>
 </body>
 </html>
-
-<!-- word_skulduggery_rooms -->
