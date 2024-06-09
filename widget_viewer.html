@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widget Viewer</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v3_1.min.css"></link>
+    <script src="https://cdn.jsdelivr.net/gh/arcanus55/neodigm55@gh-pages/dist/neodigm55_v3_1.min.js"></script>
+
+    <!-- (c) 1992-2032 🗝️ www.theScottKrause.com -->
+
+    <link rel="stylesheet" href="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.css"></link>
+    <script src="https://arcanus55.github.io/neodigm55/dist/neodigm55_v1_0_launchComplete.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<template id="wttApp" data-n55-widget-config="{conf:'', ampm:'',mobile:''}" data-n55-widget-id="a55_bcg_word_skulduggery"></template>
+<script>
+    let params = new URLSearchParams(document.location.search)
+    let SearchWdgtToken = params.get("wtt_token")
+    if( SearchWdgtToken ){
+        setTimeout(()=>{
+            const elTmpl = document.querySelector("#wttApp")
+            if( elTmpl ){
+                elTmpl.dataset.n55WidgetId = SearchWdgtToken
+                elTmpl.outerHTML = elTmpl.outerHTML.replace("template", "neodigm-widget")
+            }
+        }, 1e3)
+    }
+</script>
+</body>
+</html>
+
+<!-- word_skulduggery_rooms -->
